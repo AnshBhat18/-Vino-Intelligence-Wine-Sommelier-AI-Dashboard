@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - backend-db:/workspace/app/db
+      - shared-models:/workspace/model
+    environment:
+      - BACKEND_CORS_ORIGINS=["http://localhost:8080", "http://localhost", "http://localhost:5173"]
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  backend-db:
+  shared-models:
