@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom Webkit scrollbar for premium dark styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(139, 26, 42, 0.3);
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 26, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Premium radial gradient background for wine luxury theme */
+.wine-app-bg {
+  background: radial-gradient(ellipse at 20% 0%, #2a0a12 0%, #0d0608 50%, #060203 100%) !important;
+}
+
+.light-app-bg {
+  background: radial-gradient(ellipse at 20% 0%, #fef2f4 0%, #f8fafc 60%, #e2e8f0 100%) !important;
+}
+
+/* Glass card styling */
+.glass-card {
+  backdrop-filter: blur(12px);
+  background: rgba(22, 11, 14, 0.8);
+  border: 1px solid rgba(201, 169, 110, 0.12);
+}
+
+.glass-card-light {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
