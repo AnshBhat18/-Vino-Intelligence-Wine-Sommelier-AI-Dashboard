@@ -7,3 +7,15 @@
 [2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: POST http://testserver/api/predict/single "HTTP/1.1 422 Unprocessable Entity"
 [2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: POST http://testserver/api/predict/single "HTTP/1.1 200 OK"
 [2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: GET http://testserver/api/model/info "HTTP/1.1 200 OK"
+[2026-07-05 23:19:59] INFO [vino_intelligence:44] - Logging initialized. Writing logs to C:\PROJECTS\ML LAB PROJECT\Wine Quality\backend\app\logs\vino_intelligence.log
+[2026-07-05 23:19:59] INFO [vino_intelligence:19] - Performing database migrations...
+[2026-07-05 23:19:59] INFO [vino_intelligence:21] - Database tables initialized successfully.
+[2026-07-05 23:19:59] INFO [vino_intelligence:48] - Mounting static files from C:\PROJECTS\ML LAB PROJECT\Wine Quality\model
+[2026-07-05 23:19:59] INFO [vino_intelligence:58] - Vino Intelligence API starting up...
+[2026-07-05 23:19:59] INFO [vino_intelligence:64] - ML Model pre-cached successfully.
+[2026-07-05 23:23:20] INFO [vino_intelligence:44] - Logging initialized. Writing logs to C:\PROJECTS\ML LAB PROJECT\Wine Quality\backend\app\logs\vino_intelligence.log
+[2026-07-05 23:23:20] INFO [vino_intelligence:19] - Performing database migrations...
+[2026-07-05 23:23:20] INFO [vino_intelligence:21] - Database tables initialized successfully.
+[2026-07-05 23:23:20] INFO [vino_intelligence:48] - Mounting static files from C:\PROJECTS\ML LAB PROJECT\Wine Quality\model
+[2026-07-05 23:23:20] INFO [vino_intelligence:58] - Vino Intelligence API starting up...
+[2026-07-05 23:23:20] INFO [vino_intelligence:64] - ML Model pre-cached successfully.

@@ -1,4 +1,4 @@
-# 🍷 Vino Intelligence — Premium Wine Sommelier AI Dashboard
+# 🍷 Vino Intelligence — Wine Sommelier AI Dashboard
 
 Vino Intelligence is a professional, full-stack machine learning application designed to assess, predict, and analyze wine quality based on 11 fundamental chemical composition properties.
 
