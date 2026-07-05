@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactECharts from 'echarts-for-react';
 import { predictSingle } from '../utils/api';
-import { CheckCircle, AlertTriangle, HelpCircle, Info, Sparkles, RefreshCw } from 'lucide-react';
+import { CheckCircle, AlertTriangle, HelpCircle, Info, Sparkles, RefreshCw, Wine } from 'lucide-react';
 
 export default function PredictPage() {
   const [formData, setFormData] = useState({
