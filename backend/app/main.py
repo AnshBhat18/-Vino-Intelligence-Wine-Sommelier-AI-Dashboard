@@ -34,10 +34,10 @@ app = FastAPI(
 # Register exceptions
 register_exception_handlers(app)
 
-# Configure CORS
+# Configure CORS - allows any port on localhost or 127.0.0.1 dynamically
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.BACKEND_CORS_ORIGINS,
+    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1)(:\d+)?",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
