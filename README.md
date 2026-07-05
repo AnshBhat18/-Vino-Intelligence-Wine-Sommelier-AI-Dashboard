@@ -1,8 +1,9 @@
 # 🍷 Vino Intelligence — Premium Wine Sommelier AI Dashboard
 
-Vino Intelligence is a professional, full-stack machine learning application designed to assess, predict, and analyze wine quality based on 11 fundamental chemical composition properties. 
+Vino Intelligence is a professional, full-stack machine learning application designed to assess, predict, and analyze wine quality based on 11 fundamental chemical composition properties.
 
 This repository refactors a single-file Streamlit demo into a production-ready, modular architecture:
+
 - **Backend:** A FastAPI python web service providing request validation, SQLite persistence, and endpoints for predictions, batch processing, and retraining.
 - **Frontend:** A React + Vite SPA using Tailwind CSS for dark/light styling, and ECharts for interactive visualizations (feature importances, chemistry radar plots, confidence donut charts).
 
@@ -34,7 +35,7 @@ This repository refactors a single-file Streamlit demo into a production-ready, 
 
 ## 📂 Project Structure
 
-```
+```text
 /
 ├── backend/                  # FastAPI Application
 │   ├── app/
@@ -69,13 +70,16 @@ This repository refactors a single-file Streamlit demo into a production-ready, 
 ## 🚀 Running the Project
 
 ### Method 1: Using Docker Compose (Recommended)
+
 This is the easiest way to launch both the frontend and backend services in isolated containers.
 
 1. Ensure you have Docker and Docker Compose installed.
 2. From the root directory, run:
+
    ```bash
    docker-compose up --build
    ```
+
 3. Once completed:
    - Access the **React UI** at: `http://localhost:8080`
    - Access the **FastAPI Swagger API Docs** at: `http://localhost:8000/docs`
@@ -85,40 +89,63 @@ This is the easiest way to launch both the frontend and backend services in isol
 ### Method 2: Local Development Setup
 
 #### 1. Running the Backend
+
 1. Navigate to the backend folder:
+
    ```bash
    cd backend
    ```
+
 2. Create and activate a virtual environment:
+
    ```bash
    python -m venv .venv
-   # Windows:
-   .venv\Scripts\activate
-   # macOS/Linux:
-   source .venv/bin/activate
    ```
+
+   - Windows:
+
+     ```bash
+     .venv\Scripts\activate
+     ```
+
+   - macOS/Linux:
+
+     ```bash
+     source .venv/bin/activate
+     ```
+
 3. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
+
 4. Start the FastAPI development server:
+
    ```bash
    uvicorn app.main:app --reload --port 8000
    ```
 
 #### 2. Running the Frontend
+
 1. Navigate to the frontend folder:
+
    ```bash
    cd ../frontend
    ```
+
 2. Install node dependencies:
+
    ```bash
    npm install --legacy-peer-deps
    ```
+
 3. Start the Vite React development server:
+
    ```bash
    npm run dev
    ```
+
 4. Access the React app at the shown address (typically `http://localhost:5173`).
 
 ---
@@ -126,8 +153,10 @@ This is the easiest way to launch both the frontend and backend services in isol
 ## 🧪 Testing
 
 We use `pytest` for backend API testing. To run the test suite:
+
 1. Ensure the backend virtual environment is active.
 2. Run the following command from the root directory:
+
    ```bash
    python -m pytest backend/tests/
    ```
