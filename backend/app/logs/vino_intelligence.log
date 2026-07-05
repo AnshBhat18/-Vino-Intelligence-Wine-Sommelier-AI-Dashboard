@@ -1,0 +1,9 @@
+[2026-07-05 23:06:22] INFO [vino_intelligence:44] - Logging initialized. Writing logs to C:\PROJECTS\ML LAB PROJECT\Wine Quality\backend\app\logs\vino_intelligence.log
+[2026-07-05 23:06:22] INFO [vino_intelligence:19] - Performing database migrations...
+[2026-07-05 23:06:22] INFO [vino_intelligence:21] - Database tables initialized successfully.
+[2026-07-05 23:06:22] INFO [vino_intelligence:48] - Mounting static files from C:\PROJECTS\ML LAB PROJECT\Wine Quality\model
+[2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+[2026-07-05 23:06:22] WARNING [vino_intelligence:45] - Validation failed on /api/predict/single: body -> volatile_acidity: Input should be greater than or equal to 0.05
+[2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: POST http://testserver/api/predict/single "HTTP/1.1 422 Unprocessable Entity"
+[2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: POST http://testserver/api/predict/single "HTTP/1.1 200 OK"
+[2026-07-05 23:06:22] INFO [httpx:1025] - HTTP Request: GET http://testserver/api/model/info "HTTP/1.1 200 OK"
