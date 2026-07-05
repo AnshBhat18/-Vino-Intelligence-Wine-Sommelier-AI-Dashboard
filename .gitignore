@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.eslintcache
+
+# SQLite Database
+*.db
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Model Cache
+model/best_model.pkl
+model/scaler.pkl
+model/model_metadata.pkl
+model/binary_mode.pkl
+model/quality_threshold.pkl
+model/feature_names.pkl
+model/feature_engineering_fn.pkl
+model/confusion_matrix.png
+model/feature_importance.png
+model/feature_importance.csv
