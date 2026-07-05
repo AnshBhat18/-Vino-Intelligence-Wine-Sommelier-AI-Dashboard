@@ -8,7 +8,7 @@ export default function Header({ activeTab, setActiveTab, dark, setDark }) {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/');
+        const response = await axios.get('http://localhost:8001/');
         if (response.data && response.data.status === 'online') {
           setBackendStatus('online');
         } else {

@@ -351,7 +351,7 @@ export default function RetrainPage() {
             <div className="flex-1 flex flex-col md:flex-row items-center justify-center gap-8 p-4">
               <div className="max-w-[280px] w-full border border-zinc-200 dark:border-zinc-900 rounded-xl overflow-hidden shadow-inner bg-zinc-950">
                 <img 
-                  src="http://localhost:8000/static/model/confusion_matrix.png" 
+                  src="http://localhost:8001/static/model/confusion_matrix.png" 
                   alt="Confusion Matrix" 
                   className="w-full h-auto object-contain select-none"
                   onError={(e) => {

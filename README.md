@@ -82,7 +82,7 @@ This is the easiest way to launch both the frontend and backend services in isol
 
 3. Once completed:
    - Access the **React UI** at: `http://localhost:8080`
-   - Access the **FastAPI Swagger API Docs** at: `http://localhost:8000/docs`
+   - Access the **FastAPI Swagger API Docs** at: `http://localhost:8001/docs`
 
 ---
 
@@ -123,7 +123,7 @@ This is the easiest way to launch both the frontend and backend services in isol
 4. Start the FastAPI development server:
 
    ```bash
-   uvicorn app.main:app --reload --port 8000
+   uvicorn app.main:app --reload --port 8001
    ```
 
 #### 2. Running the Frontend

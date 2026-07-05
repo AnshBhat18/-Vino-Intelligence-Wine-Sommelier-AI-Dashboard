@@ -10,9 +10,9 @@ class Settings(BaseSettings):
     # CORS Origins
     BACKEND_CORS_ORIGINS: List[str] = [
         "http://localhost:5173",  # React default
-        "http://localhost:8000",  # FastAPI default
+        "http://localhost:8001",  # FastAPI default
         "http://127.0.0.1:5173",
-        "http://127.0.0.1:8000",
+        "http://127.0.0.1:8001",
     ]
     
     # Paths
