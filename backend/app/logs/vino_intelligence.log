@@ -19,3 +19,17 @@
 [2026-07-05 23:23:20] INFO [vino_intelligence:48] - Mounting static files from C:\PROJECTS\ML LAB PROJECT\Wine Quality\model
 [2026-07-05 23:23:20] INFO [vino_intelligence:58] - Vino Intelligence API starting up...
 [2026-07-05 23:23:20] INFO [vino_intelligence:64] - ML Model pre-cached successfully.
+[2026-07-14 13:27:32] INFO [vino_intelligence:44] - Logging initialized. Writing logs to C:\PROJECTS\ML LAB PROJECT\Wine Quality\backend\app\logs\vino_intelligence.log
+[2026-07-14 13:27:32] INFO [vino_intelligence:19] - Performing database migrations...
+[2026-07-14 13:27:32] INFO [vino_intelligence:21] - Database tables initialized successfully.
+[2026-07-14 13:27:32] INFO [vino_intelligence:48] - Mounting static files from C:\PROJECTS\ML LAB PROJECT\Wine Quality\model
+[2026-07-14 13:27:32] INFO [vino_intelligence:58] - Vino Intelligence API starting up...
+[2026-07-14 13:27:32] INFO [vino_intelligence:64] - ML Model pre-cached successfully.
+[2026-07-14 13:36:08] INFO [vino_intelligence:48] - Retraining requested with params: {'n_estimators': 250, 'max_depth': 20, 'min_samples_split': 2, 'min_samples_leaf': 1, 'binary_classification': True, 'quality_threshold': 6, 'test_size': 0.2}
+[2026-07-14 13:36:08] INFO [vino_intelligence:29] - Initializing model training pipeline...
+[2026-07-14 13:36:08] INFO [vino_intelligence:52] - Loaded 1143 samples from dataset.
+[2026-07-14 13:36:11] INFO [vino_intelligence:86] - SMOTE applied: Resampled training set size is 994.
+[2026-07-14 13:36:11] INFO [vino_intelligence:92] - Training Random Forest (n_estimators=250, max_depth=20)...
+[2026-07-14 13:36:12] INFO [vino_intelligence:107] - Model trained. Test Accuracy: 0.8079 (80.79%)
+[2026-07-14 13:36:14] INFO [vino_intelligence:168] - Training pipeline completed and artifacts written successfully.
+[2026-07-14 13:36:14] INFO [vino_intelligence:67] - Successfully loaded all ML model artifacts.
